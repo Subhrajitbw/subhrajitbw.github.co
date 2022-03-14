@@ -31,8 +31,9 @@ function Header() {
               </div>
             </div> */}
             <Link to="/job-list" className="nav-item nav-link">Jobs</Link>
+            <Link to="/job-post" className="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Post A Job<i className="fa fa-arrow-right ms-3" /></Link>
           </div>
-          <Link to="/job-post" className="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Post A Job<i className="fa fa-arrow-right ms-3" /></Link>
+          
         </div>
       </nav>
   )
