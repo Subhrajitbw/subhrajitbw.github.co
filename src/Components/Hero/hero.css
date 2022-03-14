@@ -12,6 +12,17 @@
     border-left: 15px solid var(--primary);
 }
 
+.slide-img{
+    border: 10px solid #00B074;
+    border-radius: 50%;
+    padding: 2%;
+    margin: 5px;
+}
+
+.slides{
+    padding: 5%;
+}
+
 .header-carousel .container::before,
 .header-carousel .container::after,
 .page-header .container::before,
@@ -53,6 +64,14 @@
         font-size: 30px;
         font-weight: 600;
     }
+    #scroll-container {
+        background-color: #00B074;
+        color: white;
+        border-radius: 0 !important;
+        overflow: hidden;
+        text-align: center;
+        }
+        
 }
 
 .header-carousel .owl-nav {
@@ -143,7 +162,6 @@ background-color: #00B074;
 color: white;
 border-radius: 5px;
 overflow: hidden;
-
 }
 
 #scroll-text {
