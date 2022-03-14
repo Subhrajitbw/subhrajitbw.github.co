@@ -4,7 +4,7 @@
     --light: #EFFDF5;
     --dark: #2B3940;
 }
-/*** Header ***/
+/** Header ***/
 .header-carousel .container,
 .page-header .container {
     position: relative;
