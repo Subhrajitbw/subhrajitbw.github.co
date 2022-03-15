@@ -48,7 +48,7 @@ function Hero() {
     arrows: true,
     infinite: true,
     speed: 500,
-    slidesToShow:9,
+    slidesToShow: 9,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
@@ -83,7 +83,7 @@ function Hero() {
   };
   return (
     <div>
-      
+
       {/* Carousel Start */}
       <div className="container-fluid p-0">
 
@@ -166,31 +166,31 @@ function Hero() {
       <div className="container mt-5 mb-5 brand-slider">
         <Slider {...settings2}>
           <div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
           </div>
           <div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
           </div>
           <div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
           </div>
           <div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
           </div><div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
           </div>
           <div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
           </div><div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
           </div>
           <div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
           </div><div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/indeed.png")} />
           </div>
           <div className="slides">
-          <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
+            <img alt="" className="slide-img img-fluid" src={require("../img/glassdoor.png")} />
           </div>
 
 
@@ -240,11 +240,15 @@ function Hero() {
         </div>
       </div>
       {/* Search End */}
-      <div className="container wow fadeInUp mb-5 mt-5" id="scroll-container">
-        <div id="scroll-text">This site is Updated automatically through API's on a regular basis.</div>
+      <div className="container-xxl py-5">
+        <div className="container wow fadeInUp mb-5 mt-5" id="scroll-container">
+          <div id="scroll-text">This site is Updated automatically through API's on a regular basis.</div>
+        </div>
       </div>
-      <div className="job-slider container mt-5 px-5 py-5 mb-5">
-        <JobSlider/>
+      <div className="container-xxl py-5">
+        <div className="job-slider container mt-5 px-5 py-5 mb-5">
+          <JobSlider />
+        </div>
       </div>
       {/* Category Start */}
       <div className="container-xxl py-5">
