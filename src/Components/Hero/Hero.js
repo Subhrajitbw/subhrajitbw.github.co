@@ -59,7 +59,7 @@ function Hero() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -69,7 +69,7 @@ function Hero() {
         breakpoint: 600,
         settings: {
           arrows: false,
-          slidesToShow: 1,
+          slidesToShow: 4,
           slidesToScroll: 1,
           initialSlide: 2
         }
@@ -78,7 +78,7 @@ function Hero() {
         breakpoint: 480,
         settings: {
           arrows: false,
-          slidesToShow: 1,
+          slidesToShow: 4,
           slidesToScroll: 1
         }
       }
