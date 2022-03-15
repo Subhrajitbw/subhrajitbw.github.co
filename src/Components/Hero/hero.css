@@ -12,6 +12,10 @@
   border-left: 15px solid var(--primary);
 }
 
+
+.apply-div{
+    display: block;
+}
 .job-slider{
    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
    padding: 5%;
@@ -19,7 +23,6 @@
 }
 
 .apply{
-    background-color: white;
     color: #00b074;
     border-radius: 10px;
     font-weight: 700;
