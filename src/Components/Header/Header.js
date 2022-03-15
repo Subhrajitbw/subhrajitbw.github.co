@@ -1,10 +1,21 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "./header.css"
 import $ from 'jquery'
 function Header() {
+  $(".btns").hover(function(){
+    $(this).css("transform", "scale(1.2)")
+    $(".buttons").children().not(this).css("transform", "scale(1)")
+  })
+  $(".btns").mouseout(function(){
+    $(".buttons").children().css("transform", "scale(1)")
+  })
+  // $(".btns").mouseover(function(){
+  //   $(this).css("transform", "scale(1)")
+  // })
   return (
-    <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <div>
+      <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <Link to="/" className="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
           <h1 className="m-0 text-primary">JobEntry</h1>
         </Link>
@@ -33,9 +44,15 @@ function Header() {
             <Link to="/job-list" className="nav-item nav-link">Jobs</Link>
             <Link to="/job-post" className="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Post A Job<i className="fa fa-arrow-right ms-3" /></Link>
           </div>
-          
         </div>
       </nav>
+      <div class="btn-group-vertical buttons" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary btns">Left</button>
+        <button type="button" class="btn btn-secondary btns">Middle</button>
+        <button type="button" class="btn btn-secondary btns">Right</button>
+      </div>
+
+    </div>
   )
 }
 
