@@ -243,7 +243,7 @@ function Hero() {
       <div className="container wow fadeInUp mb-5 mt-5" id="scroll-container">
         <div id="scroll-text">This site is Updated automatically through API's on a regular basis.</div>
       </div>
-      <div className="job-slider container mt-5 px-5 mb-5">
+      <div className="job-slider container mt-5 px-5 py-5 mb-5">
         <JobSlider/>
       </div>
       {/* Category Start */}
