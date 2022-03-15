@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7104688d.css",
-    "main.js": "/static/js/main.c4c40c8c.js",
+    "main.js": "/static/js/main.a12dc222.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/1691748.jpg": "/static/media/1691748.2aaee865d311b44c5615.jpg",
     "static/media/wp3592806.webp": "/static/media/wp3592806.3f1456b0f62c149f760c.webp",
@@ -14,11 +14,11 @@
     "static/media/glassdoor.png": "/static/media/glassdoor.a397f7c5af5867d56a12.png",
     "index.html": "/index.html",
     "main.7104688d.css.map": "/static/css/main.7104688d.css.map",
-    "main.c4c40c8c.js.map": "/static/js/main.c4c40c8c.js.map",
+    "main.a12dc222.js.map": "/static/js/main.a12dc222.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7104688d.css",
-    "static/js/main.c4c40c8c.js"
+    "static/js/main.a12dc222.js"
   ]
 }
