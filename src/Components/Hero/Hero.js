@@ -83,7 +83,7 @@ function Hero() {
   };
   return (
     <div>
-      <JobSlider/>
+      
       {/* Carousel Start */}
       <div className="container-fluid p-0">
 
@@ -240,10 +240,12 @@ function Hero() {
         </div>
       </div>
       {/* Search End */}
-      <div className="container wow fadeInUp" id="scroll-container">
+      <div className="container wow fadeInUp mb-5 mt-5" id="scroll-container">
         <div id="scroll-text">This site is Updated automatically through API's on a regular basis.</div>
       </div>
-
+      <div className="job-slider container mt-5 px-5 mb-5">
+        <JobSlider/>
+      </div>
       {/* Category Start */}
       <div className="container-xxl py-5">
         <div className="container">

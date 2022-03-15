@@ -12,6 +12,20 @@
   border-left: 15px solid var(--primary);
 }
 
+.job-slider{
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+   padding: 5%;
+   border-radius: 10px;
+}
+
+.apply{
+    background-color: #00b074;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
 .slide-img {
   border: 10px solid #00b074;
   border-radius: 50%;
