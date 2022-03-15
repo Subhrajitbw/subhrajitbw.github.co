@@ -1,12 +1,14 @@
 import React from "react";
 import "./hero.css";
 import Slider from "react-slick";
+import JobSlider from "./JobSlider";
 function Hero() {
   const settings = {
     dots: true,
     arrows: true,
     infinite: true,
     speed: 500,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -81,13 +83,14 @@ function Hero() {
   };
   return (
     <div>
+      <JobSlider/>
       {/* Carousel Start */}
       <div className="container-fluid p-0">
 
         <div className="owl-carousel header-carousel">
           <Slider {...settings} >
             <div className="owl-carousel-item position-relative">
-              <img alt="" className="img-fluid" src={require("../img/wp3592806.webp")} />
+              <img alt="" className="hero-image img-fluid" src={require("../img/wp3592806.webp")} />
               <div
                 className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
                 style={{ background: "rgba(43, 57, 64, .5)" }}
@@ -121,7 +124,7 @@ function Hero() {
               </div>
             </div>
             <div className="owl-carousel-item position-relative">
-              <img alt="" className="img-fluid" src={require("../img/1691748.jpg")} />
+              <img alt="" className="hero-image img-fluid" src={require("../img/1691748.jpg")} />
               <div
                 className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
                 style={{ background: "rgba(43, 57, 64, .5)" }}
@@ -237,7 +240,7 @@ function Hero() {
         </div>
       </div>
       {/* Search End */}
-      <div className="container" id="scroll-container">
+      <div className="container wow fadeInUp" id="scroll-container">
         <div id="scroll-text">This site is Updated automatically through API's on a regular basis.</div>
       </div>
 
