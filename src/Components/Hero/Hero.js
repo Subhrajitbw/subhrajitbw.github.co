@@ -2,6 +2,7 @@ import React from "react";
 import "./hero.css";
 import Slider from "react-slick";
 import JobSlider from "./JobSlider";
+import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 function Hero() {
   const settings = {
     dots: true,
@@ -44,14 +45,16 @@ function Hero() {
   };
 
   const settings2 = {
-    dots: true,
+    dots: false,
     arrows: true,
     infinite: true,
-    speed: 500,
+    easing: 'linear',
     slidesToShow: 9,
+    speed: 5000,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
+    autoplaySpeed: 0,
     responsive: [
       {
         breakpoint: 1024,
