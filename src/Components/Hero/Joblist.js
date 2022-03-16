@@ -3,58 +3,68 @@ import React, { useEffect, useState } from 'react'
 
 function Joblist() {
   const [data, setData] = useState([]);
+  const data2 = [];
   useEffect(() => {
     const fetch = async () => {
-      const response = await axios.get("https://www.reed.co.uk/api/1.0/search", {
-        mode: 'no-cors',
+      const response = await axios.get("https://edujob.herokuapp.com/promise", {
         headers: {
-          "Content-Type": "application/json",
-          'Access-Control-Allow-Origin': '*',
-          'Authorization': 'Basic ZmQ0MzQxN2ItZmRlNi00MDJhLTg0ZmYtYzQ1NmE3ZjMyNWM2Og=='
+          "Access-Control-Allow-Origin": '*',
         }
       })
-      setData(response.data.results)
+      console.log(response.data);
+      setData(response.data);
     }
     fetch();
   }, [])
 
-   const useItems = data.map
-  return (
-    <div
-      className="tab-class text-center wow fadeInUp"
-      data-wow-delay="0.3s"
-    >
-      <ul className="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
-        <li className="nav-item">
-          <a
-            className="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
-            data-bs-toggle="pill"
-            href="#tab-1"
-          >
-            <h6 className="mt-n1 mb-0">Featured</h6>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className="d-flex align-items-center text-start mx-3 pb-3"
-            data-bs-toggle="pill"
-            href="#tab-2"
-          >
-            <h6 className="mt-n1 mb-0">Full Time</h6>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className="d-flex align-items-center text-start mx-3 me-0 pb-3"
-            data-bs-toggle="pill"
-            href="#tab-3"
-          >
-            <h6 className="mt-n1 mb-0">Part Time</h6>
-          </a>
-        </li>
-      </ul>
-      </div>
+  const useItems = data.splice(0,6).map((i) => {
+      return (
+        <div className="job-item p-4 mb-4">
+          <div className="row g-4">
+            <div className="col-sm-12 col-md-8 d-flex align-items-center">
+              <img alt=""
+                className="flex-shrink-0 img-fluid border rounded"
+                src={require("../img/job.png")}
+
+                style={{ width: "80px", height: "80px" }}
+              />
+              <div className="text-start ps-4">
+                <h5 className="mb-3">{i.jobTitle}</h5>
+                <span className="text-truncate me-3">
+                  <i className="fa fa-map-marker-alt text-primary me-2" />{i.locationName}
+                </span>
+                {/* <span className="text-truncate me-3">
+                <i className="far fa-clock text-primary me-2" />Full
+                Time
+              </span> */}
+                <span className="text-truncate me-0">
+                  <i className="far fa-money-bill-alt text-primary me-2" />{i.minimumSalary} {i.currency}
+                  - {i.maximumSalary} {i.currency}
+                </span>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+              <div className="d-flex mb-3">
+                <a className="btn btn-light btn-square me-3" href>
+                  <i className="far fa-heart text-primary" />
+                </a>
+                <a className="btn btn-primary" href={i.jobUrl}>
+                  Apply Now
+                </a>
+              </div>
+              <small className="text-truncate">
+                <i className="far fa-calendar-alt text-primary me-2" />Date: {i.date}
+              </small>
+            </div>
+          </div>
+        </div>
       )
+  })
+  return (
+    <div>
+      {data && useItems}
+    </div>
+  )
 }
 
-      export default Joblist
+export default Joblist

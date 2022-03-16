@@ -1,18 +1,36 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import "./header.css"
+import axios from 'axios'
 import $ from 'jquery'
 function Header() {
-  $(".btns").hover(function(){
-    $(this).css("transform", "scale(1.2)")
-    $(".buttons").children().not(this).css("transform", "scale(1)")
-  })
-  $(".btns").mouseout(function(){
-    $(".buttons").children().css("transform", "scale(1)")
+  $(document).ready(function () {
+    $(".btns").mouseenter(function () {
+      $(this).css("transform", "scale(1.2)")
+      $(".buttons").children().not(this).css("transform", "scale(1)")
+    })
+    $(".btns").mouseout(function () {
+      $(".buttons").children().css("transform", "scale(1)")
+    })
   })
   // $(".btns").mouseover(function(){
   //   $(this).css("transform", "scale(1)")
   // })
+  useEffect(() => {
+      var fetch = async () => {
+     
+      await axios.get('https://job-search4.p.rapidapi.com/craigslist/search',{
+        params: {query: 'Software Engineer', region_id: 'sfbay', page: '1'},
+        headers: {
+          'x-rapidapi-host': 'job-search4.p.rapidapi.com',
+          'x-rapidapi-key': '0fd3ea20e1msh1040593ff0cbae8p11f723jsncf745116a077'
+        }
+      }).then((response) => {
+        console.log(response);
+      })
+    }
+    fetch();
+  },[])
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">

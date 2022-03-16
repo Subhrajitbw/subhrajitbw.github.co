@@ -93,6 +93,7 @@
   z-index: 1;
   top: 50%;
 }
+
 @keyframes drop {
   0% {
     top: 0%;
