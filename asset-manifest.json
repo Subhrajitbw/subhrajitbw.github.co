@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.02c0202c.css",
-    "main.js": "/static/js/main.501b5923.js",
+    "main.css": "/static/css/main.67e3770d.css",
+    "main.js": "/static/js/main.152e4f1e.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/1691748.jpg": "/static/media/1691748.2aaee865d311b44c5615.jpg",
     "static/media/wp3592806.webp": "/static/media/wp3592806.3f1456b0f62c149f760c.webp",
     "static/media/carousel-1.jpg": "/static/media/carousel-1.c7580639e00548aa2978.jpg",
-    "static/media/indeed.png": "/static/media/indeed.27f49a70d4aeca863f9b.png",
     "static/media/about-4.jpg": "/static/media/about-4.656278f57d34299c202e.jpg",
     "static/media/about-1.jpg": "/static/media/about-1.7206c6519bee10332e37.jpg",
     "static/media/about-2.jpg": "/static/media/about-2.a090a8f9c1937b0eaa8f.jpg",
     "static/media/about-3.jpg": "/static/media/about-3.78e43079b79ac4e3b761.jpg",
-    "static/media/glassdoor.png": "/static/media/glassdoor.a397f7c5af5867d56a12.png",
     "index.html": "/index.html",
-    "main.02c0202c.css.map": "/static/css/main.02c0202c.css.map",
-    "main.501b5923.js.map": "/static/js/main.501b5923.js.map",
+    "main.67e3770d.css.map": "/static/css/main.67e3770d.css.map",
+    "main.152e4f1e.js.map": "/static/js/main.152e4f1e.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02c0202c.css",
-    "static/js/main.501b5923.js"
+    "static/css/main.67e3770d.css",
+    "static/js/main.152e4f1e.js"
   ]
 }
